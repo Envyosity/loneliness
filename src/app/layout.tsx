@@ -1,4 +1,3 @@
-import BootScreen from '@/components/BootScreen/BootScreen';
 import './globals.css';
 import AshParticles from '@/components/AshParticles/AshParticles';
 import BottomBonfire from '@/components/BottomBonfire/BottomBonfire';
@@ -13,7 +12,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <BootScreen />
         <CrtOverlay />
         {children}
         <AshParticles />

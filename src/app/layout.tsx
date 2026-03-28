@@ -1,5 +1,4 @@
 import './globals.css';
-import AshParticles from '@/components/AshParticles/AshParticles';
 import BottomBonfire from '@/components/BottomBonfire/BottomBonfire';
 import CrtOverlay from '@/components/CrtOverlay/CrtOverlay';
 
@@ -14,7 +13,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <CrtOverlay />
         {children}
-        <AshParticles />
         <BottomBonfire />
       </body>
     </html>

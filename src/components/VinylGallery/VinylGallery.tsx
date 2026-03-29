@@ -22,23 +22,24 @@ const vinyls = [
 ];
 
 export default function VinylGallery() {
+
   return (
     <section>
       <h3 className="text-center">Currently listening to:</h3>
       <div className="flex-center">
-        <a href={process.env.NEXT_PUBLIC_SPOTIFY_PROFILE} rel="ugc">
-          <Image
-            style={{ borderRadius: "12px" }}
-            src={process.env.NEXT_PUBLIC_SPOTIFY_NOVATOREM || ""}
-            alt="Spotify"
-            width={400}
-            height={100}
-            unoptimized
-          />
-        </a>
+          <a href={process.env.NEXT_PUBLIC_SPOTIFY_NOVATOREM} rel="ugc">
+            <Image
+              style={{ borderRadius: "12px" }}
+              src={process.env.NEXT_PUBLIC_SPOTIFY_IMAGE || ""}
+              alt="Spotify"
+              width={400}
+              height={100}
+              unoptimized
+            />
+          </a>
       </div>
 
-      <h3 className="text-center">Games I played</h3>
+      <h3 className="text-center">Recent played games:</h3>
       <div
         className="flex-center"
         style={{ width: "100%", overflow: "hidden", padding: "10px 0" }}
@@ -54,7 +55,7 @@ export default function VinylGallery() {
               height: "auto",
               display: "block",
             }}
-            src="https://card.exophase.com/2/0/287641.png?1772681464"
+            src={process.env.NEXT_PUBLIC_EXOPHASE_IMAGE || ""}
             alt="Exophase"
             width={400}
             height={100}

@@ -19,7 +19,8 @@ const gifs = [
   { src: "/images/animes/ulquiorra.jpg", alt: "Ulquiorra", quote: "What is a heart?" },
   { src: "/images/games/silent_hill_2.gif", alt: "SilentHill2", quote: "There was a hole here. It's gone now." },
   { src: "/images/games/silent_hill_3.gif", alt: "SilentHill3", quote: "Monsters? They looked like monsters to you?" },
-  { src: "/images/animes/vinland_saga.gif", alt: "VinlandSaga", quote: "A true warrior needs no sword." }
+  { src: "/images/animes/vinland_saga.gif", alt: "VinlandSaga", quote: "A true warrior needs no sword." },
+  { src: "/images/animes/higuruma.gif", alt: "Higuruma", quote: "If evereyone told the truth, there would be no need for trials." }
 ];
 
 export default function Interests() {

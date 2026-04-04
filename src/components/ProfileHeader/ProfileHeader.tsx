@@ -14,7 +14,7 @@ export default function ProfileHeader() {
         />
       </div>
       <h1 className={styles.glitchName} data-text="𝓛𝓮𝓸𝓷𝓪𝓻𝓭𝓸">𝓛𝓮𝓸𝓷𝓪𝓻𝓭𝓸</h1>
-      <p className={styles.quote}>&quot;Life is precisely the finite&quot;</p>
+      <p className={styles.quote}>&quot;We can only move forward, even in the darkest time&quot;</p>
     </header>
   );
 }

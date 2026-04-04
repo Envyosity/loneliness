@@ -13,7 +13,7 @@ const gifs = [
   { src: "/images/games/bioshock.gif", alt: "Bioshock", quote: "A man chooses, a slave obeys." },
   { src: "/images/games/cod_zombies.gif", alt: "CodZombies", quote: "Fetch me their souls!" },
   { src: "/images/games/bloodborne.gif", alt: "Bloodborne", quote: "A hunter must hunt." },
-  { src: "/images/games/fallout.gif", alt: "Fallout", quote: "I survived because the fire inside burned brighter than the fire around me." },
+  { src: "/images/games/fallout.jpg", alt: "Fallout", quote: "I survived because the fire inside burned brighter than the fire around me." },
   { src: "/images/games/clair_obscur.jpg", alt: "Expedition", quote: "Tomorrow is a gift we must earn." },
   { src: "/images/animes/urahara.png", alt: "Urahara", quote: "There is nothing but fear reflected in your sword." },
   { src: "/images/animes/ulquiorra.jpg", alt: "Ulquiorra", quote: "What is a heart?" },

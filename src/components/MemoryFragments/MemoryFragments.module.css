@@ -1,88 +1,78 @@
-.profileHeader { text-align: center; margin-bottom: 50px; }
+/* memory-fragments.module.css */
 
-.profilePic img {
-  width: 160px; height: 160px; border-radius: 50%;
-  object-fit: cover; border: 2px solid var(--glass-border);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-  transition: transform 0.3s ease;
+.memory-container {
+  --bg-color: rgba(18, 18, 18, 0.95);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --accent-color: #888;
+  --text-primary: #e0e0e0;
+  
+  max-width: 600px;
+  margin: 2rem auto;
+  background: var(--bg-color);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, sans-serif;
+  backdrop-filter: blur(10px);
 }
-.profilePic img:hover { transform: scale(1.05); }
 
-.quote { font-size: 1.1rem; color: var(--text-muted); font-style: italic; }
+.memory-header {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--border-color);
+  /* Efeito de scanline sutil da imagem */
+  background-image: linear-gradient(rgba(18, 18, 18, 0) 50%, rgba(0, 0, 0, 0.1) 50%);
+  background-size: 100% 4px;
+}
 
-.glitchName {
-  position: relative;
-  font-size: 3rem;
-  font-weight: bold;
+.memory-header h2 {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
-  color: #fff;
-  /* O segredo está em chamar a animação aqui diretamente */
-  text-shadow: 0.05em 0 0 rgba(255, 0, 80, 0.75),
-               -0.025em -0.05em 0 rgba(0, 255, 200, 0.75),
-               0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
-  animation: glitch 500ms infinite;
+  color: var(--accent-color);
+  font-weight: 600;
 }
 
-.glitchName::before,
-.glitchName::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.memory-content {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 0 1.5rem;
+}
+
+/* Custom Scrollbar */
+.memory-content::-webkit-scrollbar {
+  width: 4px;
+}
+.memory-content::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 10px;
+}
+
+.memory-item {
+  padding: 1.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  font-style: italic;
+  border-bottom: 1px solid var(--border-color);
+  transition: opacity 0.3s ease;
+}
+
+.memory-item:last-child {
+  border-bottom: none;
+}
+
+.memory-item:hover {
   opacity: 0.8;
 }
 
-.glitchName::before {
-  animation: glitch 650ms infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-  transform: translate(-0.025em, -0.0125em);
-  color: #ff0050;
-}
-
-.glitchName::after {
-  animation: glitch 375ms infinite;
-  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
-  transform: translate(0.0125em, 0.025em);
-  color: #00ffc8;
-}
-
-/* Keyframes para o movimento instável */
-@keyframes glitch {
-  0% {
-    text-shadow: 0.05em 0 0 rgba(255, 0, 80, 0.75),
-                 -0.05em -0.025em 0 rgba(0, 255, 200, 0.75),
-                 -0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
-  }
-  14% {
-    text-shadow: 0.05em 0 0 rgba(255, 0, 80, 0.75),
-                 -0.05em -0.025em 0 rgba(0, 255, 200, 0.75),
-                 -0.025em 0.05em 0 rgba(255, 255, 0, 0.75);
-  }
-  15% {
-    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 80, 0.75),
-                 0.025em 0.025em 0 rgba(0, 255, 200, 0.75),
-                 -0.05em -0.05em 0 rgba(255, 255, 0, 0.75);
-  }
-  49% {
-    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 80, 0.75),
-                 0.025em 0.025em 0 rgba(0, 255, 200, 0.75),
-                 -0.05em -0.05em 0 rgba(255, 255, 0, 0.75);
-  }
-  50% {
-    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 80, 0.75),
-                 0.05em 0 0 rgba(0, 255, 200, 0.75),
-                 0 -0.05em 0 rgba(255, 255, 0, 0.75);
-  }
-  99% {
-    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 80, 0.75),
-                 0.05em 0 0 rgba(0, 255, 200, 0.75),
-                 0 -0.05em 0 rgba(255, 255, 0, 0.75);
-  }
-  100% {
-    text-shadow: -0.025em 0 0 rgba(255, 0, 80, 0.75),
-                 -0.025em -0.025em 0 rgba(0, 255, 200, 0.75),
-                 -0.025em -0.05em 0 rgba(255, 255, 0, 0.75);
+/* Responsividade */
+@media (max-width: 640px) {
+  .memory-container {
+    margin: 1rem;
+    max-width: none;
   }
 }

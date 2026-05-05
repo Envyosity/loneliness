@@ -223,22 +223,22 @@ const memoryFragmentsData = [
   {
     en: "A strong man doesn't need to read the future. He makes his own.",
     pt: "Um homem forte não precisa ler o futuro. Ele faz o seu próprio.",
-    image: "/images/games/metal_gear_solid_1.gif",
+    image: "/images/games/metal_gear_solid.gif",
   },
   {
     en: "We are not tools of the government, or anyone else. Fighting was the only thing I was good at, but at least I always fought for what I believed in.",
     pt: "Não somos ferramentas do governo, ou de qualquer outra pessoa. Lutar foi a única coisa em que eu era bom, mas pelo menos sempre lutei por aquilo em que acreditava.",
-    image: "/images/games/metal_gear_solid_1.gif",
+    image: "/images/games/metal_gear_solid.gif",
   },
   {
     en: "We mustn't allow ourselves to be chained to fate, to be ruled by our genes. Humans can choose the type of life they want to live. What's important is that you choose life... and then live.",
     pt: "Não devemos nos permitir ser acorrentados ao destino, ser governados por nossos genes. Os humanos podem escolher o tipo de vida que querem viver. O importante é que você escolha a vida... e então viva.",
-    image: "/images/games/metal_gear_solid_1.gif",
+    image: "/images/games/metal_gear_solid.gif",
   },
   {
     en: "There's no such thing as a 'final' reality. Most of what we think we know is information we've received through various media... but memories... they aren't meant to be stored on digital media. They need to be passed on by the person themselves. That's what I live for. We need to pass the torch, and let our children read our messy and sad history by its light.",
     pt: "Não existe algo como uma realidade 'final'. A maior parte do que achamos que sabemos é informação que recebemos por vários meios de comunicação... mas memórias... elas não foram feitas para serem armazenadas em mídia digital. Elas precisam ser passadas pela própria pessoa. É para isso que eu vivo. Precisamos passar a tocha e deixar que nossos filhos leiam nossa história bagunçada e triste sob essa luz.",
-    image: "/images/games/metal_gear_solid_1.gif",
+    image: "/images/games/metal_gear_solid.gif",
   },
   {
     en: "Building the future and keeping the past alive are one and the same thing.",
